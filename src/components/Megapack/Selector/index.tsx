@@ -149,21 +149,21 @@ function MegapackSelector() {
 
       <Row className={styles.details}>
         <Col xs={6}>
-          <p>Estimated Price</p>
-          <span>Subject to change <br />Taxes and installation not included</span>
-        </Col>
-        <Col xs={6} className={styles.alignRight}>
-          <p>{estimatedPrice()}</p>
-        </Col>
-      </Row>
-
-      <Row className={styles.details}>
-        <Col xs={6}>
           <p><strong>Transformer</strong></p>
           <span>Every 4 battery will need a transformer</span>
         </Col>
         <Col xs={6} className={styles.alignRight}>
           <p>{amountToDollars(transformerAmount())}</p>
+        </Col>
+      </Row>
+
+      <Row className={styles.details}>
+        <Col xs={6}>
+          <p>Estimated Price</p>
+          <span>Subject to change <br />Taxes and installation not included</span>
+        </Col>
+        <Col xs={6} className={styles.alignRight}>
+          <p>{estimatedPrice()}</p>
         </Col>
       </Row>
 
