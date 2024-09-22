@@ -20,6 +20,7 @@ $setLength: var(--data-land-length);
     left: 50%;
     z-index: 1;
     transform: translate(-50%, -50%) rotateX(65deg) rotateY(0deg) rotateZ(-48deg) scale(0.5);
+    transition: all 0.2s ease-in-out;
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
     @media screen and (max-width: 768px) {
       transform: unset;

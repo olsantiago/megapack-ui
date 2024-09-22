@@ -58,7 +58,6 @@ function MegapackSelector() {
     } else {
       setCurrentQuantity(event.target.value);
     }
-    setCurrentQuantity(event.target.value);
   }
 
   function handleDimensionsChange(event: React.ChangeEvent<HTMLInputElement>): void {
