@@ -1,0 +1,13 @@
+.inputField {
+  position: relative;
+  span.error {
+    font-size: 10px;
+    line-height: 12px;
+    font-weight: 500;
+    color: #ff0000;
+    position: absolute;
+    width: 170%;
+    bottom: -35%;
+    right: -20px;
+  }
+}

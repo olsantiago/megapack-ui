@@ -1,0 +1,58 @@
+
+$computedWidth: 700px;
+$width: var(--data-megapack-width);
+$length: 200px;
+$height: 1800px;
+
+.cube {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform-style: preserve-3d;
+  transform: rotateX(15deg) rotateY(15deg) rotateZ(-182deg) translate3D(-10em, 5em, 20em);
+  .face {
+    position: absolute;
+
+    &.front {
+      width: $width;
+      height: $length;
+      transform: translate(-50%, -50%) rotateY(0deg) translateZ($height / 2);
+      background: rgba(203, 207, 215, 1);
+    }
+
+    &.left {
+      width: $height;
+      height: $length;
+      transform: translate(-50%, -50%) rotateY(90deg) translateZ(calc($width / 2));
+      background: rgba(188, 192, 200, 1);
+    }
+
+    &.top {
+      width: $width;
+      height: $height;
+      transform: translate(-50%, -50%) rotateX(90deg) translateZ($length / 2);
+      background: rgba(208, 212, 220, 1);
+    }
+
+    &.bottom {
+      width: $width;
+      height: $height;
+      transform: translate(-50%, -50%) rotateX(-90deg) translateZ($length / 2);
+      background: rgba(168, 172, 180, 1);
+    }
+
+    &.right {
+      width: $height;
+      height: $length;
+      transform: translate(-50%, -50%) rotateY(-90deg) translateZ(calc($width/ 2));
+      background: rgba(188, 192, 200, 1);
+    }
+
+    &.back {
+      width: $width;
+      height: $length;
+      transform: translate(-50%, -50%) rotateY(180deg) translateZ($height / 2);
+      background: rgba(178, 182, 190, 1);
+    }
+  }
+}
