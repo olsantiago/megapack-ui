@@ -23,6 +23,10 @@ function View() {
     setMaxColumns(Math.ceil(columns));
   }, [currentItem, currentDimensions]);
 
+  React.useEffect(() => {
+    computeColumns();
+  }, [currentItem, currentDimensions, computeColumns])
+
   // sets the number of items based on the updated data in Context
   React.useEffect(() => {
     if (Number(currentQuantity) > 0) {
@@ -33,10 +37,6 @@ function View() {
       setCurrentItems(list);
     }
   }, [currentQuantity]);
-
-  React.useEffect(() => {
-    computeColumns();
-  }, [currentItem, currentDimensions, computeColumns])
 
   return (
     <Container className={styles.container} fluid>
