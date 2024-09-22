@@ -7,7 +7,7 @@ type Props = {
   min: number;
   max: number;
   value: number | string;
-  onChange: any
+  onChange: (event: React.ChangeEvent<HTMLInputElement>) => void // eslint-disable-line no-unused-vars
 }
 
 function InputNumber({name, min, max, value, onChange}: Props) {
