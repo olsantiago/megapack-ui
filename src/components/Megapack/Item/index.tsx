@@ -6,7 +6,7 @@ function Item() {
   const { currentItem } = useMegapackInformation();
 
   const cubeStyle = (): { [key: string]: string } => ({
-    ["--data-megapack-width"]: `${(Number(currentItem.floor_dimension.width) * 10) + 300}px`,
+    ["--data-megapack-width"]: `${(Number(currentItem.floor_dimension.width) * 10) + 500}px`,
   });
 
   return (
