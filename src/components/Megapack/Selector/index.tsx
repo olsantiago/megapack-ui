@@ -80,11 +80,12 @@ function MegapackSelector() {
   // Compute the maximum items that can fit with current dimension
   const computeMaxItems = React.useCallback(() => {
     const offset = 10;
-    const maxItemWidth = Number(currentItem.floor_dimension.width) + offset;
+    const maxItemWidth = Number(currentItem.floor_dimension.width) + (currentItem.key === "PP" ? 15 : offset);
     const maxItemLength = Number(currentItem.floor_dimension.length) + offset;
 
     const maxWidth = Math.floor(Number(currentDimensions.width) / maxItemWidth);
     const maxLength = Math.floor(Number(currentDimensions.length) / maxItemLength);
+    console.log(maxWidth, maxLength)
     setMaxItemsCap(maxWidth * maxLength);
   }, [currentItem, currentDimensions]);
 
