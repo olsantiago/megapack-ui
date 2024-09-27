@@ -31,6 +31,5 @@ yarn lint
 
 ### More to come
 ---------------
-- Allow adding different battery types in one platform
 - Drag & drop to move items on the generated platform
 
