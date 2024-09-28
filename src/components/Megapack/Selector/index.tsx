@@ -71,6 +71,7 @@ function MegapackSelector() {
         value = DIMENSION_MAX_WIDTH
       }
     }
+
     setCurrentDimensions(prev => ({
       ...prev,
       [event.target.name]: value
@@ -85,7 +86,6 @@ function MegapackSelector() {
 
     const maxWidth = Math.floor(Number(currentDimensions.width) / maxItemWidth);
     const maxLength = Math.floor(Number(currentDimensions.length) / maxItemLength);
-    console.log(maxWidth, maxLength)
     setMaxItemsCap(maxWidth * maxLength);
   }, [currentItem, currentDimensions]);
 
